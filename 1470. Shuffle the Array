@@ -1,0 +1,22 @@
+class Solution {
+public:
+    vector<int> shuffle(vector<int>& nums, int n) {
+        vector<int> ans;
+    
+        for(int i = 0; i < n; i++){
+            ans.push_back(nums[i]);
+            ans.push_back(nums[i+n]);
+            
+        }
+        return ans;
+    }
+};
+
+//here we make a vector to store ans
+//then we  pushing first i and then i+n element in the vector using for loop and return ans
+
+//example [2,5,1,3,4,7]
+//output [2,3,5,4,1,7]
+//so here 1st 2 will push in the vector then 
+//(n+i means n=3) 3+0 = 3 so at index 3. 3 value is written so 3 will push back then i will increment  
+    
